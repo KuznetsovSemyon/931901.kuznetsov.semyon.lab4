@@ -1,0 +1,138 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 35px;
+    background-color: #507299;
+    padding-top: 10px;
+    padding-left: 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+main {
+    background-color: #edeef0;
+    display: flex;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+
+    main {
+        display: table;
+    }
+    
+    menu {
+        display: table-row;
+        background: red;
+        width: 100%;
+    }
+
+    column {
+        display: table-row;
+        width: 100%;
+    }
+}
+
+.menu {
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+p.menu_element {
+    margin: 0;
+    height: 40px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center
+}
+
+p.menu_element:hover {
+    background: #e1e5eb;
+}
+
+.column {
+    float: left;
+    width: 450px;
+    margin-bottom: 20px;
+}
+
+div.column_element {
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+div.column_element_content {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+p.column_element {
+    padding-top: 10px;
+    display: table-cell;
+    width: 225px;
+    border-top: 2px solid #d0d0d0;
+}
+
+a.column_element_comment {
+    margin-left: 160px;
+}
+
+.column_element_content::selection {
+    background: #d0d0d0;
+    color: green;
+}
+
+.other {
+    float: left;
+    width: 200px;
+    margin-left: 200px;
+    position: fixed;
+    left: 830px;
+}
+
+div.other_element {
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p.other_element {
+    background-color: #edeef0;
+}
+
+a {
+    text-decoration: none;
+    color: #507299;
+}
+
+footer {
+    height: 30px;
+    padding: 5px;
+    display: flex;
+}
+
+.footer_content {
+    margin-top: 5px;
+    padding-left: 40%;
+    padding-right: 30%;
+    text-align: center;
+    color: #808080;
+}
+
+.footer_button {
+    height: 20px;
+    margin-top: 5px;
+}
