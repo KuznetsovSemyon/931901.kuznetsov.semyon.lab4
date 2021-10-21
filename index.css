@@ -1,0 +1,158 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 35px;
+    background-color: #507299;
+    padding-top: 10px;
+    padding-left: 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+main {
+    background-color: #edeef0;
+    display: flex;
+    padding-top: 50px;
+}
+
+@media (max-width: 1250px) {
+    div.other_element {
+        display:none;
+    }
+}
+
+@media (max-width: 900px) {
+
+    body {
+        background-color: #edeef0;
+    }
+
+    main {
+        display: block;
+    }
+
+    .column {
+        float: none;
+        margin-left: 20px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -200px;
+        min-width: 470px;
+    }
+
+    li {
+        min-width:fit-content;
+        max-width:fit-content;
+        padding: 5px;
+        margin-left: 10px;
+        min-height: fit-content;
+    }
+
+    footer {
+        background-color: white;
+    }
+
+}
+
+.menu {
+    width: 200px;
+    margin-left: 170px;
+    margin-top: 20px;
+    margin-right: 70px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    width: 180px;
+    margin: 0;
+    height: 40px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center
+}
+
+li:hover {
+    background: #e1e5eb;
+}
+
+.column {
+    float: left;
+    width: 450px;
+    margin-bottom: 20px;
+}
+
+div.column_element {
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+div.column_element_content {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+p.column_element {
+    padding-top: 10px;
+    display: table-cell;
+    width: 225px;
+    border-top: 2px solid #d0d0d0;
+}
+
+a.column_element_comment {
+    margin-left: 160px;
+}
+
+.column_element_content::selection {
+    background: #d0d0d0;
+    color: green;
+}
+
+.other {
+    float: left;
+    width: 200px;
+    margin-left: 200px;
+    position: fixed;
+    left: 830px;
+}
+
+div.other_element {
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p.other_element {
+    background-color: #edeef0;
+}
+
+a {
+    text-decoration: none;
+    color: #507299;
+}
+
+footer {
+    height: 30px;
+    width: 100%;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #808080;
+    clear: both;
+}
